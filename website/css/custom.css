@@ -104,3 +104,16 @@ body {
     display: none;
   }
 }
+
+/* The missing-page fallback uses the landing's cream and Claude orange. */
+.usage-not-found { margin: 0; background: var(--claude-cream); color: var(--claude-text); }
+.usage-not-found * { box-sizing: border-box; }
+.usage-not-found header { padding: 16px 24px; background: #fff; border-bottom: 1px solid #e5e7eb; }
+.usage-not-found-brand { display: inline-flex; align-items: center; gap: 12px; color: var(--claude-dark); text-decoration: none; font-size: 20px; font-weight: 600; }
+.usage-not-found main { min-height: calc(100dvh - 73px); display: grid; place-items: center; padding: 64px 24px; text-align: center; }
+.usage-not-found section { width: min(100%, 640px); }
+.usage-not-found-code { margin: 24px 0 12px; color: var(--claude-orange); font-size: 20px; font-weight: 600; }
+.usage-not-found h1 { margin: 0 0 20px; font-size: clamp(32px, 6vw, 56px); line-height: 1.08; letter-spacing: -0.04em; color: var(--claude-dark); }
+.usage-not-found h1 + p { max-width: 40ch; margin: 0 auto; font-size: 18px; line-height: 1.65; color: #6b7280; }
+.usage-not-found-action { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; margin-top: 32px; padding: 12px 24px; border-radius: 8px; color: var(--claude-dark); font-weight: 600; text-decoration: none; }
+.usage-not-found a:focus-visible { outline: 3px solid var(--claude-dark); outline-offset: 4px; }
